@@ -1,0 +1,672 @@
+
+
+*{
+    box-sizing: border-box;
+    font-family: "Sofia Sans Extra Condensed";
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.cont-cabeza{
+    background-color: rgb(58, 60, 62);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+
+.cont-cabeza header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px, 35px;
+}
+
+.cont-cabeza header .logo a{
+    font-family: Merriweather;
+    font-size: 40px;
+    color: rgb(63, 143, 51);
+    text-decoration: none;
+}
+
+.cont-cabeza header ul{
+    display: flex;
+    list-style: none;
+}
+
+.cont-cabeza header nav ul li a{
+    text-align: justify;
+    color: rgb(63, 143, 51);
+    margin: 20px 20px;
+    padding: 10px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.cont-cabeza header nav ul li a:hover{
+    color: rgb(6, 177, 60);
+}
+
+.nav-responsive{
+    background-color: rgb(63, 143, 51);
+    color: #fff;
+    padding:  5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+ 
+
+.inicio {
+    background: linear-gradient(to bottom, rgb(63, 143, 51, .6), rgb(63, 143, 51, 1));
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+}
+
+.inicio .contenido-banner {
+    padding: 10px;
+    background-color: black;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.contenedor-img {
+    width: 310px;
+    height: 310px;
+}
+
+.inicio .contenido-banner img{
+    margin-top:  40px;
+    border: 5px solid rgb(63, 143, 51);
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 100%;
+    
+}
+
+.inicio .contenido-banner h1{
+    margin-bottom: 25px;
+    font-size: 45px;
+    font-family: Merriweather
+}
+
+.inicio .contenido-banner h2{
+    font-size: 25px;
+    font-weight: normal;
+    font-family: Merriweather
+}
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 25px;
+    transition: 0.5;
+}
+
+.inicio .contenido-banner .redes:hover {
+    background-color: blue;
+}
+
+.sobremi {
+    background-color: rgb(63, 143, 51);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-size: 45px;
+    font-family: Merriweather;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+
+.sobremi .contenido-section p{
+    font: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+
+.sobremi .contenido-section p span{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.sobremi .fila {
+    display: flex;
+    text-align: center;
+}
+
+.sobremi .fila .cola {
+    width: 100%;
+    text-align: center;
+}
+
+.sobremi .fila .cola h3{
+    font-size: 30px;
+    font-family: Merriweather;
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .cola ul{
+    list-style: none;
+}
+
+.sobremi .fila .cola ul li{
+    margin: 10px;
+    font-size: 25px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid rgb(0, 0, 0);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 20;
+}
+
+.sobremi button .over{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    transition: 1.2s;
+    z-index: -1;
+}
+
+
+.sobremi button:hover .over{
+    width: 100%;
+}
+
+.habilidades {
+    background-color: rgb(63, 143, 51);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.habilidades .contenido-hab{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.habilidades h2{
+    font-size: 45px;
+    font-family: Merriweather;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.habilidades .fila{
+    display: flex;
+}
+
+.habilidades .fila .col{
+    width: 50%;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.habilidades .fila .col h3{
+    font-size: 30px;
+    font-family: Merriweather;
+    margin-bottom: 35px;
+}
+
+.habilidades .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.habilidades .skill .barra-skill{
+    height: 18px;
+    width: 80%;
+    background-color: black;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.habilidades .skill .progreso{
+    background-color: rgb(255, 27, 11);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+
+}
+
+.habilidades .skill .barra-skill span{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(255, 27, 11);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -10px;
+    right: -15px;
+    font-size: 14px;
+}
+
+
+.habilidades .skill .mano {
+    width: 0%;
+    animation: 2.5s mano forwards;
+}
+
+@keyframes mano {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+
+.habilidades .skill .vista {
+    width: 0%;
+    animation: 2.5s vista forwards;
+}
+
+@keyframes vista {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.habilidades .skill .concentracion {
+    width: 0%;
+    animation: 2.5s concentracion forwards;
+}
+
+@keyframes concentracion {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.habilidades .skill .presion {
+    width: 0%;
+    animation: 2.5s presion forwards;
+}
+
+@keyframes presion {
+    0%{width: 0%;}
+    100%{width: 82%;}
+}
+
+.habilidades .skill .detalle {
+    width: 0%;
+    animation: 2.5s detalle forwards;
+}
+
+@keyframes detalle {
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+
+.habilidades .skill .equipo {
+    width: 0%;
+    animation: 2.5s equipo forwards;
+}
+
+@keyframes equipo {
+    0%{width: 0%;}
+    100%{width: 84%;}
+}
+
+.habilidades .skill .dedicacion {
+    width: 0%;
+    animation: 2.5s dedicacion forwards;
+}
+
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.habilidades .skill .autosuperacion {
+    width: 0%;
+    animation: 2.5s autosuperacion forwards;
+}
+
+@keyframes autosuperacion {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.habilidades .skill .creatividad {
+    width: 0%;
+    animation: 2.5s creatividad forwards;
+}
+
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 88%;}
+}
+
+.habilidades .skill .comunicacion {
+    width: 0%;
+    animation: 2.5s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+
+.cv {
+    background-color: rgb(63, 143, 51);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.cv .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.cv h2{
+    font-size: 45px;
+    font-family: Merriweather;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.cv .fila{
+    display: flex;
+}
+ 
+.cv .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.cv .fila .col h3{
+    font-size: 25px;
+    font-family: Merriweather;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.cv .fila .izquierda{
+    border-right: 2px solid black;
+}
+
+.cv .fila .derecha{
+    border-left: 2px solid black;
+}
+
+.cv .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: rgb(28, 67, 23);
+    position: relative;
+}
+
+.cv .fila .item h4{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.cv .fila .lugar{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.cv .fila .item .casa{
+    color: rgb(28, 67, 23);
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.cv .fila .item .fecha{
+    display: block;
+    color: rgb(21, 62, 33);
+    margin-bottom: 10px;
+}
+
+.cv .fila .item p{
+    line-height: 24px;
+}
+
+.cv .fila .izq{
+    margin-right: 20px;
+}
+
+.cv .fila .der{
+    margin-right: 20px;
+}
+
+
+
+.portfolio {
+    background-color: rgb(63, 143, 51);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;    
+}
+
+.portfolio h2{
+    font-size: 45px;
+    font-family: Merriweather;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: flex;
+}
+
+.portfolio .galeria .proyecto .img1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.portfolio .galeria .proyecto .img2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.portfolio .galeria .proyecto .img3{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(52, 81, 48, 0.7), rgb (52,81,48,0.7));
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.2s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 3;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 25px;
+    transition: 0.5;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: rgb(63, 143, 51);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 980px){
+nav{
+    display: none;
+}
+.nav-responsive{
+    display: block;
+}
+nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: rgb(203, 239, 199);
+    width: 180px;
+    }
+.nav.responsive ul{
+    display: block !important;
+    }
+.nav.responsive ul li{
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    }
+}
+    
+
+@media screen and(max-width: 700px){
+    .sobremi .fila{
+        display: block;
+    }
+
+    .sobremi .fila .cola{
+        width: fit-content;
+    }
+
+    .contenido-hab .fila{
+        display: block;
+    }
+    .contenido-hab .fila .col{
+        width: 100%;
+    }
+    .contenido-hab .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .cv .fila{
+        display: block;
+    }
+    .cv .fila .col {
+        width: 90%;
+    }
+    .cv .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+}
+
